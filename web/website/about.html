@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale = 1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="product.html">PRODUCTS</a></li>
+            <li><a href="setup.html">SETUP</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+
+    <!----------about us content--------->
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>OUR TEAM</h1>
+
+          <p>
+            <b>
+              With high skilled tool engineers it becomes a default consequence
+              to design el manufacture intricate eL sophisticated tools We are
+              having high skilled TOOL DESIGN ENGINEERS having 20+ years of
+              experience in same field We are confident that in view of the
+              above advantages, combined with the moderate prices, we await your
+              esteemed orders and Looking We have been an established a popular
+              company with an excellent track record for the best customer
+              satisfaction. We have never compromised on the quality and the
+              services provide to the customer. We believe in keeping customers
+              happy and providing them with products at a very competent price.
+              Please feel free to keep in touch with us about any of your
+              business requirements/queries. Please note that we also specialize
+              in Designing both plastic moulding and sheet metal dies for
+              Promoting activities in the present market trends.</b
+            >
+          </p>
+          <a href="" class="hero-btn red-btn">EXPLORE-NOW</a>
+        </div>
+        <div class="about-col">
+          <img
+            src="C:\Users\vijet\Desktop\web\website\charlesdeluvio-Lks7vei-eAg-unsplash.jpg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <p>Made with <i class="fa fa-heart-o"></i>by VTE fam!</p>
+
+    <!------------JavaScript for Toggle Menu------------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
